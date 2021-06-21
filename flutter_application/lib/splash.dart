@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class splash extends StatelessWidget {
   splash({
-    Key? key,
+    Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class splash extends StatelessWidget {
                             borderRadius: BorderRadius.all(
                                 Radius.elliptical(9999.0, 9999.0)),
                             image: DecorationImage(
-                              image: const AssetImage('assets/images/pc2i.png'),
+                              image: const AssetImage(''),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -91,19 +91,15 @@ class splash extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 116.0, middle: 0.5019),
-            Pin(size: 74.0, middle: 0.6599),
+            Pin(size: 145.0, middle: 0.5),
+            Pin(size: 97.0, middle: 0.6336),
             child: Text(
               'PC2I',
               style: TextStyle(
-                fontFamily: 'Louis George Café',
-                fontSize: 61,
+                fontFamily: 'Segoe UI',
+                fontSize: 73,
                 color: const Color(0xffffffff),
-                letterSpacing: -1.7428571262359618,
-                height: 1.721311475409836,
               ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
               textAlign: TextAlign.left,
             ),
           ),
